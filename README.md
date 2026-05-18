@@ -1,16 +1,21 @@
-# React + Vite
+## 프로젝트 설명
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kakao Map API를 활용해 제작한 공공 와이파이 지도 서비스입니다.
 
-Currently, two official plugins are available:
+사용자가 지도에서 공공 와이파이 위치를 확인할 수 있으며, 관심 있는 와이파이 위치를 즐겨찾기로 저장하고 관리할 수 있도록 구현했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Context API와 LocalStorage를 활용해 즐겨찾기 데이터를 여러 컴포넌트에서 공유하고, 새로고침 후에도 유지되도록 구성했습니다.
 
-## React Compiler
+## 주요 기능
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Kakao Map API 기반 지도 출력 기능
+- 공공 와이파이 위치 마커 표시 기능
+- 마커 선택 시 와이파이 정보 확인 기능
+- 즐겨찾기 추가 기능
+- 즐겨찾기 삭제 기능
+- 즐겨찾기 토글 기능
+- Context API 기반 전역 상태 관리
+- 커스텀 훅을 활용한 즐겨찾기 로직 분리
+- LocalStorage 기반 즐겨찾기 데이터 저장
+- 새로고침 후 즐겨찾기 데이터 유지
+- React Router DOM 기반 페이지 이동 구조
